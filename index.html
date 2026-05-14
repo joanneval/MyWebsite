@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brew Haven Coffee Shop</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5eee6;
+      color:#333;
+    }
+
+    /* HEADER */
+    header{
+      background:#4b2e2e;
+      color:white;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:16px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#d9a066;
+    }
+
+    /* HERO SECTION */
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.5);
+      padding:40px;
+      border-radius:15px;
+    }
+
+    .hero h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#d9a066;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#b97d3f;
+    }
+
+    /* MENU SECTION */
+    .menu{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .menu h2{
+      font-size:40px;
+      margin-bottom:40px;
+      color:#4b2e2e;
+    }
+
+    .menu-container{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:25px;
+    }
+
+    .menu-card{
+      background:white;
+      width:250px;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .menu-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .menu-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .menu-card h3{
+      margin:15px 0 10px;
+      color:#4b2e2e;
+    }
+
+    .menu-card p{
+      padding:0 15px 20px;
+      font-size:14px;
+    }
+
+    /* ABOUT */
+    .about{
+      background:#fff;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .about h2{
+      font-size:40px;
+      margin-bottom:20px;
+      color:#4b2e2e;
+    }
+
+    .about p{
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#4b2e2e;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:40px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">☕ Brew Haven</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Fresh Coffee Everyday</h1>
+      <p>Enjoy the best handcrafted coffee in town.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu">
+    <h2>Our Best Sellers</h2>
+
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop">
+        <h3>Cappuccino</h3>
+        <p>Rich espresso with steamed milk and foam.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop">
+        <h3>Latte</h3>
+        <p>Smooth and creamy coffee perfect for your day.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?q=80&w=800&auto=format&fit=crop">
+        <h3>Mocha</h3>
+        <p>A delicious mix of coffee and chocolate flavor.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      Brew Haven is a cozy coffee shop dedicated to serving freshly brewed
+      coffee and delicious snacks. We believe every cup of coffee should
+      bring comfort, warmth, and happiness to our customers.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Brew Haven Coffee Shop | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
